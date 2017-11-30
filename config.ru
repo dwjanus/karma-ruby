@@ -2,7 +2,7 @@ ENV['RACK_ENV'] ||= 'development'
 
 Bundler.require :default
 
-require_relative 'commands'
+require_relative 'bot'
 
 Mongoid.load!(File.expand_path('config/mongoid.yml', __dir__), ENV['RACK_ENV'])
 
